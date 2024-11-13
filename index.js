@@ -16,9 +16,9 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use(express.json());
 
-app.use('api/users', userRoutes);
-app.use('api/events', eventRoutes);
-app.use('api/eventuser',eventuserRoutes);
+app.use('/api/users', userRoutes);
+app.use('/api/events', eventRoutes);
+app.use('/api/eventuser',eventuserRoutes);
 
 const PORT = process.env.PORT || 5000;
 
