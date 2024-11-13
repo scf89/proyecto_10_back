@@ -8,7 +8,7 @@ const eventuserRoutes = require('./src/api/routes/eventuserRoutes');
 
 const app = express();
 
-const allowedOrigins = ['http://localhost:5173'];
+const allowedOrigins = ['http://localhost:5173', 'https://proyecto-10-back-ecru.vercel.app'];
 app.use(cors({
   origin: function (origin, callback) {
     // Permitir solicitudes sin origen (como herramientas de prueba)
